@@ -19,12 +19,12 @@ pip install streamlit langchain faiss-cpu transformers sentence-transformers
 
 
 ## Application Workflow
-Upload CSV: Once you upload a CSV file, it gets loaded using CSVLoader from LangChain.
-Embedding and Vector Store: The data is embedded using the HuggingFaceEmbeddings model and saved in a FAISS vector store for efficient retrieval.
+**Upload CSV:** Once you upload a CSV file, it gets loaded using CSVLoader from LangChain.
+**Embedding and Vector Store:** The data is embedded using the HuggingFaceEmbeddings model and saved in a FAISS vector store for efficient retrieval.
 
-Conversational Chain: The pre-trained Llama 2 model processes queries in a conversational format, searching through the CSV data using the FAISS retriever.
+**Conversational Chain:** The pre-trained Llama 2 model processes queries in a conversational format, searching through the CSV data using the FAISS retriever.
 
-Interaction: You can ask queries related to the data, and the model will respond based on the CSV content.
+**Interaction:** You can ask queries related to the data, and the model will respond based on the CSV content.
 
 ## Files
 app.py: The main Streamlit application.
